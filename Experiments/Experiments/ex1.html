@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ex1</title>
+</head>
+
+<body>
+    <section>
+        <h1>title 1</h1>
+        <h2>title 2</h2>
+        <h3>title 3</h3>
+        <h4>title 4</h4>
+        <h5>title 5</h5>
+        <h6>title 6</h6>
+        <p>a paragraph</p>
+        <p>
+            a paragraph <br />
+            with new line
+        </p>
+        <font size="12" face="times new roman" color="">font</font>
+        <b>bold</b>
+        <i>italic</i>
+        <u>underline</u>
+        <hr />
+    </section>
+
+    <section>
+        <ul>
+            <li>
+                1
+                <ul>
+                    <li>1.1</li>
+                    <li>1.2</li>
+                </ul>
+            </li>
+            <li>
+                2
+                <ul>
+                    <li>
+                        2.1
+                        <ul>
+                            <li>2.1.1</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                3
+                <ul>
+                    <li>3.1</li>
+                    <li>3.2</li>
+                    <li>3.3</li>
+                </ul>
+            </li>
+            <li>4</li>
+        </ul>
+        <ul style="list-style: none">
+            <li>
+                联系方式1
+                <ul style="list-style: none">
+                    <li>邮箱：bwshen@nuist.edu.cn</li>
+                    <li>周一至周日9:00-22:00</li>
+                </ul>
+            </li>
+            <li>
+                联系方式2
+                <ul style="list-style: none">
+                    <li>电话：13813011506</li>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+    </section>
+
+    <section>
+        <table style="width: 600px; text-align: center" align="center">
+            <tr>
+                <th>
+                    <a href="#timetable">我的课表</a>
+                </th>
+                <th>
+                    <a href="https://sbwww.github.io/images/BowenShen.JPG">
+                        <img src="https://sbwww.github.io/images/BowenShen.JPG" alt="利用表格进行页面布局" width="50px" />
+                    </a>
+                </th>
+            </tr>
+        </table>
+        <h2 id="timetable">利用表格显示数据</h2>
+        <table style="width: 75%; text-align: center;" align="center">
+            <caption>计科5班 201883290091 申博文 课程表</caption>
+            <th>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            </th>
+            <tr>
+                <td>1-2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>编译原理</td>
+                <td>Web上机</td>
+            </tr>
+            <tr>
+                <td>3-4</td>
+                <td>马原</td>
+                <td>算法设计</td>
+                <td>C#</td>
+                <td>马原</td>
+                <td>Unix</td>
+            </tr>
+            <tr>
+                <td colspan="6">午休</td>
+            </tr>
+            <tr>
+                <td>5-6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Web</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7-8</td>
+                <td>编译原理</td>
+                <td>近代史</td>
+                <td>人工智能</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <hr />
+    </section>
+    <section>
+        <form method="post" action="#">
+            <table style="width: 90%; text-align: center" align="center" border="1">
+                <caption>FORM</caption>
+                <tr>
+                    <td colspan="1">输入姓名</td>
+                    <td colspan="3"><input type="text" name="demo-name" id="demo-name" value="" placeholder="姓名"></td>
+                </tr>
+                <tr>
+                    <td colspan="1">输入邮箱</td>
+                    <td colspan="3"><input type="email" name="demo-email" id="demo-email" value="" placeholder="邮箱"></td>
+                </tr>
+                <tr>
+                    <td colspan="1">选择职业</td>
+                    <td colspan="3"><select name="demo-category" id="demo-category">
+                            <option value="">- 请选择 -</option>
+                            <option value="1">技术开发</option>
+                            <option value="2">项目经理</option>
+                            <option value="3">人力资源</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>学历</td>
+                    <td>
+                        <input type="radio" id="demo-priority-low" name="demo-priority">
+                        <label for="demo-priority-low">大学专科</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="demo-priority-normal" name="demo-priority">
+                        <label for="demo-priority-normal">大学本科</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="demo-priority-high" name="demo-priority">
+                        <label for="demo-priority-high">硕士及以上</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="checkbox" id="demo-copy" name="demo-copy">
+                        <label for="demo-copy">向我发送邮件备份</label></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><textarea style="width: 75%" name="demo-message" id="demo-message" placeholder="输入备注"></textarea></td>
+                </tr>
+            </table>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary"></li>
+                <li><input type="reset" value="Reset"></li>
+            </ul>
+
+        </form>
+    </section>
+</body>
+
+</html>
