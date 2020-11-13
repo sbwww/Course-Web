@@ -1,0 +1,23 @@
+body {
+  font-family: "Microsoft YaHei";
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline;
+}
+
+ul li img {
+  width: 32%;
+}
+ul li img.detail {
+  display: none;
+}
+ul li:hover img.detail {
+  display: inline;
+  transform: scale(1.5);
+  position: absolute;
+  z-index: 2;
+}

@@ -1,0 +1,150 @@
+* {
+  font-size: 12px;
+  font-family: Times New Roman;
+  color: #828282;
+}
+body {
+  width: 984px;
+  height: 800px;
+  padding: 2px;
+  margin: 0 auto;
+}
+#header {
+  width: 984px;
+  height: 120px;
+  background: #ffffff;
+}
+#logo {
+  width: 199px;
+  height: 80px;
+  float: left;
+  background: #ffffff url("logo.png") no-repeat left bottom;
+}
+#search {
+  width: 785px;
+  height: 80px;
+  background: #ffffff;
+  float: right;
+}
+#nav {
+  clear: both;
+  width: 984px;
+  height: 40px;
+  background: #ebebeb;
+}
+#picture {
+  width: 984px;
+  height: 337px;
+  background: #828282;
+}
+#main {
+  width: 984px;
+  height: 250px;
+  border-bottom: 5px ridge #dedede;
+}
+#left {
+  width: 240px;
+  height: 200px;
+  background: #eeffdd;
+  float: left;
+  border-right: 10px solid #ffffff;
+}
+#center {
+  width: 466px;
+  height: 200px;
+  float: left;
+  background: #eeffdd;
+  border-right: 5px solid #ffffff;
+}
+#right {
+  width: 263px;
+  height: 200px;
+  background: #eeffdd;
+  float: right;
+}
+#footer {
+  clear: both;
+  width: 984px;
+  height: 40px;
+  background: #f7f7f7;
+  text-align: center;
+}
+table {
+  text-align: center;
+  line-height: 1.5em;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:active {
+  color: #828282;
+}
+#nav a:hover {
+  color: #bf0000;
+  text-decoration: none;
+}
+#nav td {
+  width: 165px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+#line {
+  background: url("line.png") no-repeat right center;
+}
+ul {
+  list-style: none;
+  margin-left: 10px;
+  line-height: 1.8em;
+}
+#left li {
+  border-bottom: 1px dotted #009900;
+}
+#left a:hover {
+  color: #bf0000;
+  text-decoration: underline;
+}
+input {
+  vertical-align: middle;
+  padding: 2px auto;
+}
+#footer p {
+  margin-top: 20px;
+  text-align: center;
+  color: 333333;
+}
+
+/* custom */
+
+#search {
+  text-align: right;
+}
+#search img {
+  vertical-align: middle;
+}
+#main #center .imglist img {
+  animation: picmove 10s linear infinite forwards;
+}
+@keyframes picmove {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-935px);
+  }
+}
+#main #center .imglist {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 180px;
+  white-space: nowrap;
+}
+#main #center .imglist img {
+  width: auto;
+  height: 100%;
+  margin-right: 10px;
+}

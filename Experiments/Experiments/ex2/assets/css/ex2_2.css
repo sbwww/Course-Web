@@ -1,0 +1,23 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+span.G {
+  color: blue;
+  font-weight: bold;
+  font-size: 60px;
+}
+span.o1 {
+  color: red;
+  font-weight: bold;
+  font-size: 60px;
+}
+span.o2 {
+  color: yellow;
+  font-weight: bold;
+  font-size: 60px;
+}
+span.g {
+  color: blue;
+  font-weight: bold;
+  font-size: 60px;
+}
