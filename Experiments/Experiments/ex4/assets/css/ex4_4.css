@@ -1,0 +1,42 @@
+.content {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "微软雅黑";
+}
+
+.logo {
+  margin: 10px 0;
+}
+
+.cartList {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cartList tr td {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+}
+
+.cartList tr td .price {
+  width: 30%;
+  border: none;
+  background: transparent;
+  text-align: left;
+}
+
+.cartList tr td .amount {
+  width: 15%;
+  text-align: center;
+  border: 1px solid #999999;
+}
+
+.cartList tr td .minus,
+.cartList tr td .plus {
+  width: 15%;
+  border: 1px #999999 solid;
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>ex4</title>
+  <link rel="stylesheet" href="assets/css/ex4_4.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="logo">
+      <img src="http://shopping.dangdang.com/shoppingcart/images/dd_logo.jpg?v=20181226">
+    </div>
+    <div class="cartList" id="cartList">
+      <table>
+        <tr>
+          <th><input type="checkbox" name="selectAll" id="selectAll" onclick="selectAll()">全选</th>
+          <th>商品图片</th>
+          <th>商品信息</th>
+          <th>单价（元）</th>
+          <th>数量</th>
+          <th>金额（元）</th>
+          <th>操作</th>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="select"></td>
+          <td>
+            <img src="http://img3x9.ddimg.cn/88/32/28558519-1_m_6.jpg">
+          </td>
+          <td>Flutter开发实战详解</td>
+          <td>¥<input class="price" type="text" value="85.40" id="price_1">
+          </td>
+          <td>
+            <input class="minus" type="button" value="-" onclick="changeNum(this)">
+            <input class="amount" type="text" value="1" onchange="changeNum(this)">
+            <input class="plus" type="button" value="+" onclick="changeNum(this)">
+          </td>
+          <td>¥<span name="sums">85.40</span></td>
+          <td>
+            <p>收藏</p>
+            <p onclick="deleteGood(this)">删除</p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="select"></td>
+          <td>
+            <img src="http://img3x7.ddimg.cn/6/24/28521807-1_m_9.jpg">
+          </td>
+          <td>Flutter实战</td>
+          <td>
+            ¥<input class="price" type="text" value="72.60" id="price_2">
+          </td>
+          <td>
+            <input class="minus" type="button" value="-" onclick="changeNum(this)">
+            <input class="amount" type="text" value="1" onchange="changeNum(this)">
+            <input class="plus" type="button" value="+" onclick="changeNum(this)">
+          </td>
+          <td>¥<span name="sums">72.60</span></td>
+          <td>
+            <p>收藏</p>
+            <p onclick="deleteGood(this)">删除</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><input class="pay" type="button" value="结算" onclick="total()"></td>
+          <td>¥<span id="totalPrice">0.00</span></td>
+        </tr>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/ex4_4.js"></script>
+</body>
+
+</html>
